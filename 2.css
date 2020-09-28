@@ -1,0 +1,66 @@
+
+body{
+    margin:90px;
+    
+  }
+    
+  .price {
+  color: black;
+  font-size: 18px;
+  font-weight:150;
+  font-style: oblique;
+}
+.mySlides {display:none;}
+img { height:250px ;}
+.row {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.row2 {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+.column {
+  flex: 25%;
+  padding: 0px;
+}
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: left;
+  font-family: arial;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color:black;
+  
+  
+}
+.card button:hover {
+  opacity: 0.7;
+}
+div.t {
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+}
