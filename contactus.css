@@ -1,0 +1,81 @@
+body{
+    background-color:white;
+
+
+
+ 
+ background-image:
+        linear-gradient(rgba(2, 2,2,0.2), rgba(2, 2,2,0.4)),
+        url('images/travel.jpg') ;
+ 
+ 
+                background-repeat: no-repeat;
+ 
+    background-size: 100% 100%;
+}
+.contact{
+    padding: 4%;
+    height: 400px;
+    width: 94%;
+}
+.col-md-3{
+    background:#141d27;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+    color:white;
+}
+.col-md-9{
+    background: #fff;
+
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-top: 4%;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background:#141d27;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+
+.row {
+
+
+    margin-right: 8px;
+    margin-left: 56px;
+    margin-top: 14%;
+}
+
+.h4, h4 {
+
+    color: white;
+}
+
+.error {
+
+    color:red;
+}
+
+.success {
+
+
+    color:red;
+    text-align: center;
+    font-size:4%;
+}

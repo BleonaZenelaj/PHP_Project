@@ -1,0 +1,474 @@
+html {
+    background: rgb(230, 230, 255);
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+}
+body{
+   
+}
+.banner1, .banner2, .banner3, .banner4{
+    height:30vh;
+    width: 91%;
+    position:absolute;
+    left:0;
+    top: 0;
+    margin-bottom:14%;
+}
+.sliderimg{
+    width: 120%;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+.text-box{
+    width600px;
+    position: absolute;
+    top: 200px;
+    left:100px;
+    color: #fff;
+}
+.text-box h1{
+    margin-bottom:40px;
+}
+.text-box p{
+    font-size:14px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+.text-box span{
+    background:red;
+    height 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+
+}
+.banner1{
+    animation: slide1 9s linear infinite;
+}
+.banner2 {
+    animation: slide2 9s linear infinite;
+}
+.banner3 {
+    animation: slide3 9s linear infinite;
+}
+.banner4 {
+    animation: slide4 9s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes slide2 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes slide3 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes slide4 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+*,
+*::before
+*::after{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+   
+    width:82%;
+    max-width:100rem;
+    margin-left:8%;
+    padding:0 1.5rem;
+    margin-top:46%;
+    margin-bottom:20%;
+}
+.image-gallery {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas: 
+        'img-1 img-2 img-3 img-3'
+        'img-1 img-4 img-5 img-6'
+        'img-7 img-7 img-8 img-6';
+}
+.image-gallery a{
+    width:100%;
+    height: 25rem;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+}
+
+    .image-gallery a i {
+        color: rgba(255,255,255, .6);
+        font-size: 3rem;
+        position: relative;
+        z-index: 100;
+        padding: 1rem 3rem;
+        border: 2px solid rgba(255,255,255, .6);
+        border-radius: .4rem;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+.image-gallery a::before{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .8);
+    opacity: 0;
+    transition: opacity .5s;
+
+}
+.image-gallery a:hover i,
+.image-gallery a:hover::before{
+    opacity: 1;
+}
+.img-1{
+    grid-area: img-1;
+    min-height: 51.5rem;
+    background-image: url("images/img1.png");
+}
+.img-2 {
+    grid-area: img-2;
+    background-image: url("images/img2.png");
+}
+.img-3 {
+    grid-area: img-3;
+    background-image: url("images/img3.png");
+}
+.img-4 {
+    grid-area: img-4;
+    background-image: url("images/img4.png");
+}
+.img-5 {
+    grid-area: img-5;
+    background-image: url("images/img5.png");
+}
+.img-6 {
+    grid-area: img-6;
+    min-height:51.5rem;
+    background-image: url("images/img6.png");
+}
+.img-7 {
+    grid-area: img-7;
+    background-image: url("images/img7.png");
+}
+.img-8 {
+    grid-area: img-8;
+    background-image: url("images/img8.png");
+}
+@media screen and (max-width: 900px) {
+    .image-gallery {
+        grid-template-areas:
+            'img-1 img-1 img-2 img-2' 
+            'img-1 img-1 img-3 img-3'
+            'img-4 img-4 img-5 img-5' 
+            'img-6 img-7 img-7 img-7' 
+            'img-8 img-8 img-8 img-8';
+        
+    }
+    .image-gallery a{
+        height: 20rem;
+    }
+    .img-1{
+        min-height: 41.5rem;
+
+    }
+    .img-6{
+        min-height: 20rem;
+    }
+
+}
+.container1{
+    margin-top: -10%;
+    margin-left: 5%;
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+
+}
+    .container1 .box {
+        position: relative;
+        height: 400px;
+        background-color: #141d27;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+    }
+.container1 .box:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+
+}
+.container1 .box:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    pointer-events: none;
+}
+
+.content{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+.box .content h2{
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin:0;
+    padding:0;
+    font-size: 10em;
+    color: rgba(255,255,255, .05);
+    transition: 0.5s;
+
+
+}
+.box:hover .content h2 {
+    top: -140px;
+}
+.box .content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: wheat;
+}
+.box .content p {
+    margin: 0;
+    padding: 0;
+    color: wheat;
+    font-size: 16px;
+}
+.box .content a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
+    color: wheat;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+.box:hover .content a{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.box .content a:hover {
+    color: wheat;
+    background: #ff3333;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.social-card-header {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 96px;
+}
+
+    .social-card-header i {
+        font-size: 32px;
+        color: #FFF;
+    }
+
+.bg-facebook {
+    background-color: red;
+}
+
+.text-facebook {
+    color: #3b5998;
+}
+
+.bg-google-plus {
+    background-color:red;
+}
+
+.text-google-plus {
+    color: #dd4b39;
+}
+
+.bg-twitter {
+    background-color: #1da1f2;
+}
+
+.text-twitter {
+    color: #1da1f2;
+}
+
+.bg-pinterest {
+    background-color:red;
+}
+
+.text-pinterest {
+    color: #bd081c;
+}
+
+.share:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}

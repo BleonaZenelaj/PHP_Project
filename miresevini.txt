@@ -1,0 +1,2 @@
+If an attempt to open a file fails then fopen returns a value of false otherwise it returns<br />
+a file pointer which is used for further reading or writing to that file.<br />
